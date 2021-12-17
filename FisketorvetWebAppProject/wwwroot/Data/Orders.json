@@ -1,0 +1,303 @@
+[
+  {
+    "ID": 1,
+    "ProductList": null,
+    "Status": null,
+    "Customer": {
+      "PhoneNumber": "576079138",
+      "Email": "mateista01@gmail.com",
+      "address": "Maglehøjen 10, 2. lejl. 208",
+      "CustomerCart": {
+        "_productsList": [
+          {
+            "_image": "chair.jpg",
+            "ID": 2,
+            "Shop": "Jysk",
+            "Price": 1499.0,
+            "InStock": true,
+            "Name": "Gaming-stol TYPE Z RAZER LEGEND",
+            "Image": "chair.jpg"
+          },
+          {
+            "_image": "desk.png",
+            "ID": 4,
+            "Shop": "Jysk",
+            "Price": 799.0,
+            "InStock": true,
+            "Name": "Gaming desk - HALSTED 60x120",
+            "Image": "desk.png"
+          },
+          {
+            "_image": "chair.jpg",
+            "ID": 2,
+            "Shop": "Jysk",
+            "Price": 1499.0,
+            "InStock": true,
+            "Name": "Gaming-stol TYPE Z RAZER LEGEND",
+            "Image": "chair.jpg"
+          }
+        ]
+      },
+      "Id": 0,
+      "Name": "Ken",
+      "Login": null,
+      "Password": null,
+      "isAdmin": false
+    },
+    "TotalPrice": 3797.0,
+    "DateTime": "2021-12-15T00:00:00+01:00",
+    "Payment": null
+  },
+  {
+    "ID": 2,
+    "ProductList": null,
+    "Status": "Awaiting_Payment",
+    "Customer": {
+      "PhoneNumber": "576079138",
+      "Email": "mateista01@gmail.com",
+      "address": "Maglehøjen 10, 2. lejl. 208",
+      "CustomerCart": {
+        "_productsList": [
+          {
+            "_image": "chair.jpg",
+            "ID": 2,
+            "Shop": "JYSK",
+            "Price": 1499.0,
+            "InStock": true,
+            "Name": "Gaming-stol TYPE Z RAZER LEGEND",
+            "Image": "chair.jpg"
+          },
+          {
+            "_image": "peanutbutter.jpg",
+            "ID": 1,
+            "Shop": "fotex",
+            "Price": 25.0,
+            "InStock": true,
+            "Name": "Peanut Butter",
+            "Image": "peanutbutter.jpg"
+          },
+          {
+            "_image": "FrozenPizza.PNG",
+            "ID": 9,
+            "Shop": "fotex",
+            "Price": 50.0,
+            "InStock": true,
+            "Name": "Trattoria Alfredo Four Cheese ",
+            "Image": "FrozenPizza.PNG"
+          }
+        ]
+      },
+      "Id": 0,
+      "Name": "Ken",
+      "Login": null,
+      "Password": null,
+      "isAdmin": false
+    },
+    "TotalPrice": 1574.0,
+    "DateTime": "2021-12-16T08:23:30.4910277+01:00",
+    "Payment": {
+      "PaymentID": 0,
+      "PaymentMethod": "LoyaltyCard",
+      "Date": "0001-01-01T00:00:00",
+      "totalAmount": 0.0
+    }
+  },
+  {
+    "ID": 3,
+    "ProductList": null,
+    "Status": "Awaiting_Payment",
+    "Customer": {
+      "PhoneNumber": "576079138",
+      "Email": "mateista01@gmail.com",
+      "address": "Maglehøjen 10, 2. lejl. 208",
+      "CustomerCart": {
+        "_productsList": [
+          {
+            "_image": "chair.jpg",
+            "ID": 2,
+            "Shop": "JYSK",
+            "Price": 1499.0,
+            "InStock": true,
+            "Name": "Gaming-stol TYPE Z RAZER LEGEND",
+            "Image": "chair.jpg"
+          },
+          {
+            "_image": "Nutella.jpg",
+            "ID": 3,
+            "Shop": "fotex",
+            "Price": 30.0,
+            "InStock": true,
+            "Name": "Nutella",
+            "Image": "Nutella.jpg"
+          },
+          {
+            "_image": "peanutbutter.jpg",
+            "ID": 1,
+            "Shop": "fotex",
+            "Price": 25.0,
+            "InStock": true,
+            "Name": "Peanut Butter",
+            "Image": "peanutbutter.jpg"
+          }
+        ]
+      },
+      "Id": 0,
+      "Name": "Ken",
+      "Login": null,
+      "Password": null,
+      "isAdmin": false
+    },
+    "TotalPrice": 1554.0,
+    "DateTime": "2021-12-16T09:18:42.4860434+01:00",
+    "Payment": {
+      "PaymentID": 0,
+      "PaymentMethod": "LoyaltyCard",
+      "Date": "0001-01-01T00:00:00",
+      "totalAmount": 0.0
+    }
+  },
+  {
+    "ID": 4,
+    "ProductList": null,
+    "Status": "Awaiting_Payment",
+    "Customer": {
+      "PhoneNumber": "576079138",
+      "Email": "mateista01@gmail.com",
+      "address": "Maglehøjen 10, 2. lejl. 208",
+      "CustomerCart": {
+        "_productsList": [
+          {
+            "_image": "chair.jpg",
+            "ID": 2,
+            "Shop": "JYSK",
+            "Price": 1499.0,
+            "InStock": true,
+            "Name": "Gaming-stol TYPE Z RAZER LEGEND",
+            "Image": "chair.jpg"
+          },
+          {
+            "_image": "peanutbutter.jpg",
+            "ID": 1,
+            "Shop": "fotex",
+            "Price": 25.0,
+            "InStock": true,
+            "Name": "Peanut Butter",
+            "Image": "peanutbutter.jpg"
+          },
+          {
+            "_image": "desk.png",
+            "ID": 4,
+            "Shop": "JYSK",
+            "Price": 799.0,
+            "InStock": true,
+            "Name": "Gaming desk - HALSTED 60x120",
+            "Image": "desk.png"
+          }
+        ]
+      },
+      "Id": 0,
+      "Name": "Ken",
+      "Login": null,
+      "Password": null,
+      "isAdmin": false
+    },
+    "TotalPrice": 2323.0,
+    "DateTime": "2021-12-16T09:20:40.8717067+01:00",
+    "Payment": {
+      "PaymentID": 0,
+      "PaymentMethod": "LoyaltyCard",
+      "Date": "0001-01-01T00:00:00",
+      "totalAmount": 0.0
+    }
+  },
+  {
+    "ID": 5,
+    "ProductList": null,
+    "Status": "Awaiting_Payment",
+    "Customer": {
+      "PhoneNumber": "4566",
+      "Email": "kas@gmail.com",
+      "address": "vej 11",
+      "CustomerCart": {
+        "_productsList": [
+          {
+            "_image": "peanutbutter.jpg",
+            "ID": 1,
+            "Shop": "fotex",
+            "Price": 25.0,
+            "InStock": true,
+            "Name": "Peanut Butter",
+            "Image": "peanutbutter.jpg"
+          },
+          {
+            "_image": "chair.jpg",
+            "ID": 2,
+            "Shop": "JYSK",
+            "Price": 1499.0,
+            "InStock": true,
+            "Name": "Gaming-stol TYPE Z RAZER LEGEND",
+            "Image": "chair.jpg"
+          }
+        ]
+      },
+      "Id": 0,
+      "Name": "Kacper",
+      "Login": null,
+      "Password": null,
+      "isAdmin": false
+    },
+    "TotalPrice": 1524.0,
+    "DateTime": "2021-12-16T09:39:38.3106942+01:00",
+    "Payment": {
+      "PaymentID": 0,
+      "PaymentMethod": "LoyaltyCard",
+      "Date": "0001-01-01T00:00:00",
+      "totalAmount": 0.0
+    }
+  },
+  {
+    "ID": 6,
+    "ProductList": null,
+    "Status": "Awaiting_Payment",
+    "Customer": {
+      "PhoneNumber": "4532",
+      "Email": "test@gmail",
+      "address": "street",
+      "CustomerCart": {
+        "_productsList": [
+          {
+            "_image": "Chips.jpg",
+            "ID": 5,
+            "Shop": "Lidl",
+            "Price": 30.0,
+            "InStock": true,
+            "Name": "KiMs Sour Cream & Onion Chips",
+            "Image": "Chips.jpg"
+          },
+          {
+            "_image": "Nutella.jpg",
+            "ID": 3,
+            "Shop": "fotex",
+            "Price": 30.0,
+            "InStock": true,
+            "Name": "Nutella",
+            "Image": "Nutella.jpg"
+          }
+        ]
+      },
+      "Id": 0,
+      "Name": "class",
+      "Login": null,
+      "Password": null,
+      "isAdmin": false
+    },
+    "TotalPrice": 60.0,
+    "DateTime": "2021-12-16T11:05:34.6271623+01:00",
+    "Payment": {
+      "PaymentID": 0,
+      "PaymentMethod": "LoyaltyCard",
+      "Date": "0001-01-01T00:00:00",
+      "totalAmount": 0.0
+    }
+  }
+]

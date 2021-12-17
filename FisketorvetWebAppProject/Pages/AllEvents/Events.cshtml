@@ -1,0 +1,98 @@
+﻿@page
+@model FisketorvetWebAppProject.AllEvents.EventsModel
+@{ }
+@using Microsoft.AspNetCore.Http;
+
+
+<div class="btn-toolbar" role="toolbar">
+
+    <div class="btn-group" role="group" ; style="margin-top:20px">
+        <form method="get">
+            <div class="form-actions no-color">
+                <p>
+                    <input type="text" asp-for="Criteria" />
+                    <input type="submit" value="Search" class="btn-sm btn-primary" />
+                </p>
+            </div>
+        </form>
+    </div>
+
+    @if (HttpContext.Session.Keys.Contains("admin"))
+    {
+
+            <div class="btn-group" role="group" style="margin-left: 735px; margin-top:20px">
+                <div>
+                    <a asp-page="/AllEvents/EventCreation" class="btn btn-primary">Create event</a>
+                </div>
+            </div>
+    }
+
+
+
+</div>
+
+
+
+@*<div class="card-deck">
+
+        @foreach (var events in Model.EventList)
+        {
+            var image = "/images/Events/" + events.Image;
+
+    <div class=" card m-3" style="min-width: 18rem; max-width: 31%; height: 24rem;">
+        <img class="card-img-top img-thumbnail" src="@image" alt="Event image">
+        <div class="card-header; card-text: word-wrap: break-word" ; style="overflow: hidden; text-align: center; text-overflow: ellipsis;">
+            <h4>
+                @events.Title
+            </h4>
+            <p>
+                @events.Description
+            </p>
+            <div class="card-body">
+
+            </div>
+
+        </div>
+        <div class="card-footer text-center" style="margin-top: auto; border-radius: 4px; padding: 10px;">
+            <a asp-page="/AllEvents/EditEvents" asp-route-id="@events.Id" class="btn btn-primary m-1">Edit</a>
+            <a asp-page="/AllEvents/DeleteEvent" asp-route-id="@events.Id" class="btn btn-primary m-1">Delete</a>
+        </div>
+
+    </div>}
+
+    </div>*@
+
+
+
+<div class="card-deck">
+
+    @foreach (var events in Model.EventList)
+    {
+        var image = "/images/Events/" + events.Image;
+
+    <div class=" card m-3" style="min-width: 18rem; max-width: 31%; height: 25rem;">
+
+        <div class="card-header;">
+
+            <img class="card-img-top img-thumbnail" src="@image" alt="Event image" style="max-height:100%; max-width:100%">
+
+        </div>
+        <div class="card-body card-text: word-wrap: break-word" ; style="overflow: hidden; text-align: center;">
+            <h4>
+                @events.Title
+            </h4>
+            <p>
+                @events.Description
+            </p>
+        </div>
+        @if (HttpContext.Session.Keys.Contains("admin"))
+        {
+            <div class="card-footer text-center" style="margin-top: auto; border-radius: 4px; padding: 10px;">
+                <a asp-page="/AllEvents/EditEvents" asp-route-id="@events.Id" class="btn btn-primary m-1">Edit</a>
+                <a asp-page="/AllEvents/DeleteEvent" asp-route-id="@events.Id" class="btn btn-primary m-1">Delete</a>
+            </div>
+        }
+
+    </div>}
+
+</div>

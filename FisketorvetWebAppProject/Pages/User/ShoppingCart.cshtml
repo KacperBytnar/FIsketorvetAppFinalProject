@@ -1,0 +1,70 @@
+﻿@page
+@model FisketorvetWebAppProject.Pages.User.ShoppingCartModel
+@{
+}
+<h1 style="text-align:center; font-family:" Comic Sans MS">Shopping Cart</h1>
+
+
+@if (Model.ListOfProducts.Count != 0)
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr style="text-align:center">
+                <th>Product name</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Shop</th>
+                <th class="text-md-right">Combined Quantity</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ListOfProducts)
+            {
+                //if (Model.ShoppingCart.CheckDistinctList(item))
+                //{
+                    <tr>
+                        <td class="text-center">@item.Name</td>
+                        <td class="text-md-center">@item.Price Kr.</td>
+                        <td>
+                            <img src="/images/ProductImages/@item.Image" width="60" height="70">
+                        </td>
+                        <td class="text-md-center">@item.Shop</td>
+                        <td class="text-md-center">@Model.ShoppingCart.ProductQuantity(item)</td>
+                        <td class="text-md-left">
+                            <form method="post">
+                                <button asp-page-handler="Delete" asp-route-ID="@item.ID" class="btn btn-danger btn-group-lg pull-right">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                @*}
+                Model.ShoppingCart.AddDistincProduct(item);*@
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="text-right"><p style="font-size:22px;">Total Price:</p></td>
+                <td class="text-right">
+                    <p style="font-size:22px;">
+                        @Model.ShoppingCart.CalculateTotalPrice() Kr.
+                    </p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="text-center">
+        <a asp-page="/AllProducts/AllProducts" class="btn btn-primary">Continue shopping</a>
+        <a asp-page="/Orders/CheckOut" class="btn btn-primary">Check_Out</a>
+    </div>
+}
+else
+{
+    <br><br>
+    <h1 style="font-size:64px; text-align:center; font-family : 'Times New Roman', Times, serif"Times New Roman" >Your cart is empty!</h1>
+    <div class="text-center">
+        <a asp-page="/AllProducts/AllProducts" class="btn btn-primary">Continue shopping</a>
+    </div>
+}
+
+
+

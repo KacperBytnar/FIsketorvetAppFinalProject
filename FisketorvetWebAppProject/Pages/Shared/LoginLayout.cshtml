@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FISKETORVET</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3;" style="background-color: #f3fffe">
+
+            <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="/images/newlogo.png" alt="Logo" ; style="height:60px" margin-left: 50px;" /> </a>
+
+            <div class="container" style="height: 50px;">
+
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1" style="margin-left: 115px;">
+                        <li class="nav-item" style="margin-right: 100px; font-size:20px;">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index"> <strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 90px; font-size: 20px;">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/AllEvents/Events"><strong>Events</strong></a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 90px; font-size: 20px;">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Shops"><strong>Shops</strong></a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 90px; font-size: 20px;">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/AllProducts/AllProducts"><strong>Products</strong></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 70px; font-size: 16px;">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/User/RegisterUserAccount"><strong>Sign Up</strong></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 40px; font-size: 16px; margin-right:5px;">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/User/AccountLogin"><strong>Sign In</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div style="width: 100%; height: 500px; background-color: #d8e9ea; ">
+
+        <div class="container" style="position: relative; ">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+    </div>
+
+    <div style="width: 100%; height: 700px; background-color: #f0ffff;">
+        <div class="container">
+
+        </div>
+
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - FisketorvetShops - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

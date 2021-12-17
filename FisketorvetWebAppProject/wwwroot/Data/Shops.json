@@ -1,0 +1,29 @@
+﻿[
+  {
+    "StoreID": 1,
+    "Name": "fotex",
+    "Location": 1,
+    "Description": "Besides the average groceries, Føtex at Fisketorvet offer a very large assortment. You will find everything you need in the open butcher shop, the bakery, in the large wine department, the fragrant fruit and vegetable department, and many more specialities. Welcome to Føtex at Fisketorvet.",
+    "PhoneNumber": "33 46 00 00",
+    "Category": "HyperMarket & Food",
+    "Image": "fotex.png"
+  },
+  {
+    "StoreID": 2,
+    "Name": "JYSK",
+    "Location": 1,
+    "Description": "In JYSK’s city store at Fisketorvet, customers will find a handpicked selection of JYSK’s assortment within home accessories with a focus on design and quality at fair prices.",
+    "PhoneNumber": "70 80 81 90",
+    "Category": "Home",
+    "Image": "Jysk.png"
+  },
+  {
+    "StoreID": 3,
+    "Name": "Lidl",
+    "Location": 0,
+    "Description": "Lidl is one of Europe's leading supermarket chains. The principle at Lidl is to make it as easy for the customer as possible. At Lidl at Fisketorvet it is offered groceries of the best quality to the best price. Welcome in Lidl at Fisketorvet.",
+    "PhoneNumber": "45 23 12 68",
+    "Category": "HyperMarket & Food",
+    "Image": "lidl.png"
+  }
+]

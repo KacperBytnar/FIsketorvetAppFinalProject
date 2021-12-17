@@ -1,0 +1,83 @@
+[
+  {
+    "_image": "peanutbutter.jpg",
+    "ID": 1,
+    "Shop": "fotex",
+    "Price": 25.0,
+    "InStock": true,
+    "Name": "Peanut Butter",
+    "Image": "peanutbutter.jpg"
+  },
+  {
+    "_image": "chair.jpg",
+    "ID": 2,
+    "Shop": "JYSK",
+    "Price": 1499.0,
+    "InStock": true,
+    "Name": "Gaming-stol TYPE Z RAZER LEGEND",
+    "Image": "chair.jpg"
+  },
+  {
+    "_image": "Nutella.jpg",
+    "ID": 3,
+    "Shop": "fotex",
+    "Price": 30.0,
+    "InStock": true,
+    "Name": "Nutella",
+    "Image": "Nutella.jpg"
+  },
+  {
+    "_image": "desk.png",
+    "ID": 4,
+    "Shop": "JYSK",
+    "Price": 799.0,
+    "InStock": true,
+    "Name": "Gaming desk - HALSTED 60x120",
+    "Image": "desk.png"
+  },
+  {
+    "_image": "Chips.jpg",
+    "ID": 5,
+    "Shop": "Lidl",
+    "Price": 30.0,
+    "InStock": true,
+    "Name": "KiMs Sour Cream & Onion Chips",
+    "Image": "Chips.jpg"
+  },
+  {
+    "_image": "divider.PNG",
+    "ID": 6,
+    "Shop": "JYSK",
+    "Price": 750.0,
+    "InStock": false,
+    "Name": "Room divider HALDAGER 16 ",
+    "Image": "divider.PNG"
+  },
+  {
+    "_image": "Blueberries.jpg",
+    "ID": 7,
+    "Shop": "Lidl",
+    "Price": 15.0,
+    "InStock": true,
+    "Name": "Freshona Frozen Fruit",
+    "Image": "Blueberries.jpg"
+  },
+  {
+    "_image": "FrozenPeas.jpg",
+    "ID": 8,
+    "Shop": "Lidl",
+    "Price": 20.0,
+    "InStock": false,
+    "Name": "Freshona Frozen Peas",
+    "Image": "FrozenPeas.jpg"
+  },
+  {
+    "_image": "FrozenPizza.PNG",
+    "ID": 9,
+    "Shop": "fotex",
+    "Price": 50.0,
+    "InStock": true,
+    "Name": "Trattoria Alfredo Four Cheese ",
+    "Image": "FrozenPizza.PNG"
+  }
+]

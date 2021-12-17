@@ -1,0 +1,33 @@
+﻿@page
+@model FisketorvetWebAppProject.Pages.Orders.CheckOutModel
+@{
+}
+<h2 style="text-align:center">Check-Out</h2>
+
+<form method="post">
+    <h3>Please fill this form with neccessary data</h3>
+    <div class="form-group">
+        <label>Email:</label><input asp-for="@Model.customer.Email" type="email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Address:</label><input asp-for="@Model.customer.address" type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Phone Number:</label><input asp-for="@Model.customer.PhoneNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Payment Method: 
+            <select asp-for="@Model.order.Payment.PaymentMethod" class="form-control">
+                @foreach (var item in Enum.GetValues(typeof(Models.PaymentMethod)))
+                {
+                    <option>
+                        @item
+                    </option>
+                }
+            </select>
+        </label>
+    </div>
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Complete Order" />
+    </div>
+</form>

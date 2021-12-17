@@ -1,0 +1,59 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h4 class="text-md-center">Fisketorvet is a shopping centre located on Kalvebod Brygge waterfront in Copenhagen, Denmark.</h4>
+</br>
+<div class="container" style="height:1200px; width:1100px; margin-bottom:0px;">
+    <div class="float-left">
+        <img style="height;384px; width: 512px;" src="~/images/main3.jpg" />
+    </div>
+    <div class="float-right" style="float:right; width:500px;">
+        <h4 class="float-md-left">History</h4>
+        <p class="float-lg-right" style="font-family: 'Times New Roman'">
+            The shopping centre takes its name after Copenhagen's old fish market which was located at the site from 1958 until 1999 when it moved to new premises in the North Harbour. The shopping centre was designed by Kiehlers Architects (Carl Gustaf Åkerström) and opened on 10 October 2000. It is owned by Unibail-Rodamco.
+        </p>
+    </div>
+    <div class="float-right" style="float:right; width:500px;">
+        <h4 class="float-md-left">
+            Fisketorvet Copenhagen Mall
+        </h4>
+        <p class="float-lg-right" style="font-family: 'Times New Roman'">
+            One of the largest shopping centers with the absolutely unique location in Copenhagen as it is located right on the water. Here you will find everything your heart desires in a wide variety of shops and restaurants. We have one of the best cinemas and IMAX with Scandinavia's largest canvas and an exciting mix of shops that range from the very high class fashion to groceries.
+        </p>
+    </div>
+    <h1 class="text-md-right" style="margin-top:25px;margin-bottom:25px;"><a asp-page="/AllEvents/Events">News/Events</a></h1>
+    <div class="card-deck align-top" style="margin-top:0px;">
+
+        @foreach (var events in Model.EventList)
+        {
+            var image = "/images/Events/" + events.Image;
+
+            <div class=" card m-3" style="min-width: 18rem; max-width: 31%; height: 25rem;">
+
+                <div class="card-header;">
+
+                    <img class="card-img-top img-thumbnail" src="@image" alt="Event image" style="max-height:100%; max-width:100%">
+
+                </div>
+                <div class="card-body card-text: word-wrap: break-word" ; style="overflow: hidden; text-align: center;">
+                    <h4>
+                        @events.Title
+                    </h4>
+                    <p>
+                        @events.Description
+                    </p>
+                </div>
+
+            </div>}
+
+    </div>
+</div>
+
+
+
+
+
+

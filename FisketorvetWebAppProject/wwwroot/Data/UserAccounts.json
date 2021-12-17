@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "Name": "Ken",
+    "Login": "Kengo",
+    "Password": "ken123",
+    "isAdmin": false
+  },
+  {
+    "Id": 2,
+    "Name": "Kacper",
+    "Login": "admin",
+    "Password": "admin",
+    "isAdmin": true
+  },
+  {
+    "Id": 3,
+    "Name": "Kacpe",
+    "Login": "admin1",
+    "Password": "admin1",
+    "isAdmin": true
+  },
+  {
+    "Id": 4,
+    "Name": "class",
+    "Login": "user",
+    "Password": "user",
+    "isAdmin": false
+  }
+]

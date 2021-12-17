@@ -1,0 +1,33 @@
+﻿@page
+@model FisketorvetWebAppProject.Pages.RegisterUserAccountModel
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.User.Name" class="control-label"> Name </label>
+        <input asp-for="@Model.User.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.User.Login" class="control-label">Login </label>
+        <input asp-for="@Model.User.Login" class="form-control" />
+        <span asp-validation-for="@Model.User.Login" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.User.Password" class="control-label">Password</label>
+        <input asp-for="@Model.User.Password" class="form-control" />
+        <span asp-validation-for="@Model.User.Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.ConfirmPassword" class="control-label">Confirm Password</label>
+        <input asp-for="@Model.ConfirmPassword" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label" asp-for="@Model.User.isAdmin">Admin?:</label>
+        <input class="border-dark" type="checkbox" asp-for="@Model.User.isAdmin">
+    </div>
+    <h3 style="margin-bottom:20px; text-align:center; color: red; font-family: " Comic Sans MS";> @Model.registerMessage</h3>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
